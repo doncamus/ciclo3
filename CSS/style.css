@@ -1,0 +1,21 @@
+/*manejo por nombre etiqueta*/
+h1 {  /*selector*/ 
+    /*color: blue;   /*mejor los colores en hezadecimal que no rn ingles*/ 
+    color: #5f6c97;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+/*Manejo por identificador*/
+
+#introduccion{
+    color: #5f9762;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+/*Manejo por Clases*/
+
+.grande{
+    color: #97655f;
+    font-style: italic;
+    font-weight: bolder;
+}

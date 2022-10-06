@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios de la aplicacion WEB</title>
+</head>
+<body>
+    <header>
+        <!--Cabecera de la pagina-->
+        <h1> <!--primera cabecera-->
+                FORMULARIOS
+
+        </h1>
+
+    </header>
+        <!--MENU-->
+
+
+    <nav>
+        <ul>  <!--lista desordenada-->
+            <li>      <ul>  <!--items de la lista
+            -->
+                HOME
+
+            </li>
+        
+        </ul>
+
+    </nav>
+  <!--MEIN principal-->
+    <main>
+        <form action="registro.jsp">     <!--Todo lo que se va a registra en e, forummulario permite despues cargar  a la base de datos-->
+            <label for="">
+                Nombre:
+            </label>
+            <input type="text" name="nombre">    <!--name es para recuperar lo que ingrese en el texto-->
+            <br>   <!--Salto de linea-->
+            <label for="">
+                Apellido:
+            </label>
+            <input type="text" name="apellido">    <!--name es para recuperar lo que ingrese en el texto-->
+            <br>   <!--Salto de linea-->
+            <label for="">
+                Direccion:
+            </label>
+            <input type="text" name="direccion">    <!--name es para recuperar lo que ingrese en el texto-->
+            <br>   <!--Salto de linea-->
+            <input type="text" name="direccion2" placeholder="Digite direccion 2">  <!--mejor usar place holder tiene el texto adentro-->
+            <br>   <!--Salto de linea-->
+            <label for="">
+
+                Salario que aspira:
+                <input type="number" name="salario">
+                <br>   <!--Salto de linea-->
+            </label>
+            <label for="">
+                Fecha Nacimiento:
+                <input type="date" name="fechannac" >
+                <br>   <!--Salto de linea-->
+            </label>
+
+            <label for="">
+                terminos y condiciones
+                <input type="checkbox" name="Terminos" >
+                <br>   <!--Salto de linea-->
+            </label>
+
+           hobbies
+                <input type="checkbox" name="FUTBOL" >
+                <input type="checkbox" name="LEER" >
+                <input type="checkbox" name="PELIS" >
+                <BR>
+                </BR>
+
+                <label for="">
+                    Sexo:
+
+                </label>
+                <input type="radio" name="sexo">Masculino
+                <input type="radio" name="sexo">Femenino
+                    <br>
+                <label for="">
+                    Sexo:
+                </label>
+                <select name="sexo" >
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+
+                </select>
+                <br>
+                <label for="">
+                    Contacto:
+                </label>
+                <br>
+                <textarea name="contacto" id="" cols="30" rows="10"></textarea>
+                <br>
+                <label for="">
+                    seleccione su color favorito
+                </label>
+                <input type="color" name="Color" >
+                <br>
+                <label for="">
+                    subir hoja de vida
+                </label>
+                <input type="file" name="archivo" >
+                <br>
+                <label for="">
+                    correo:
+                </label>
+                <input type="email" name="correo" >
+                <br>
+                <label for="">
+                    contraseña:
+                </label>
+                <input type="password" name="clave" >
+                <br>
+                <button type="submit">Registrar</button>
+                <br>
+                <button type="reset">Resetear</button>
+
+        </form>
+    </main>
+
+
+</body>
+</html>

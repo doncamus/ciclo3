@@ -1,0 +1,32 @@
+/* selector universal */
+/* todo esto para que la oagina sea responsible osea que se pueda usar en cualquier dispositivo */
+
+*{  
+    box-sizing: border-box;
+    margin: 0;    /* 0 px no deja espacion estan juntas */
+    padding: 0;   /* relleno */
+}
+html{
+
+    font-size: 62.5%;
+}
+.container{
+    display: flex;   /* en la pantalla los contenedores van a ser flexibles */
+    flex-wrap: wrap;  /* los contenedores se van a poder extender*/
+}
+
+.c1,.c2,.c3,.c4,.c5{
+width: 100%;
+min-width: 150px; /* se condiciona */
+height: 150px;
+}
+/* siguiente selector */
+
+.c1{
+    background-color: #003476;
+}
+
+
+
+
+
