@@ -1,0 +1,24 @@
+/*use de media qeueris*/
+/*esto para que los contenedores de contenido se ajusten a la pantalla*/
+
+
+
+@media (min-width:800px){  /*si la pagina es superior a 800 se formatea para desktop*/
+    .container{
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    .c1{
+        width: 60%;
+    }
+    .c2{
+        width: 40%;
+    }
+    .c3,.c4{
+        width: 33%;
+    }
+    .c5{
+        width: 34%;
+    }
+}

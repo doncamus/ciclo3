@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones2</title>
+    <script src="funciones2.js"></script>
+</head>
+<body>
+    
+    <HEAder>
+
+        <H1> Figuras Geometricas   </H1>
+
+    </HEAder>
+
+    <section>
+
+        <h2>Calculo del area del triangulo </h2>
+
+        <form action="">
+            <label for="InputBase">Base: </label>
+            <input type="number" name="InputBase" id="InputBase"> <!--id es para Css-->
+            <label for="InputAlura">Altura: </label>   <!--se tiene que usar el nmombre que esta en  funciones2.js-->
+            <input type="number" name="InputAlura" id="InputAlura"> <!--id es para Css-->
+            <button type="button" onclick="calcularAreaT()">Calcular Area Triangulo</button> <!--ingresa al dar clic y se llama la funcion-->
+
+        </form>
+
+    </section>
+
+
+    <section>
+
+        <h2>Calculo del Volumen del Cono </h2>
+
+        <form action="">
+            <label for="InputRadio">Radio: </label>
+            <input type="number" name="InputRadio" id="InputRadio"> <!--id es para Css-->
+            <label for="InputAlura">AlturaCono: </label>   <!--se tiene que usar el nmombre que esta en  funciones2.js-->
+            <input type="number" name="InputAluraC" id="InputAluraC"> <!--id es para Css-->
+            <button type="button" onclick="calcularVolumenC()">Calcular Volumen del Cono</button> <!--ingresa al dar clic y se llama la funcion-->
+
+        </form>
+
+
+    </section>
+
+    <h2>Coleccion </h2>
+
+    <section>
+        <form action="" id="formulario1">    <!--llama de javascrip -->
+            <label for="">Nombre:</label>
+            <input type="text" name="Nombre" id="Nombre" value="German">   <!--Variable que almacena Nombre-->
+            <label for="">Apellido:</label>
+            <input type="text" name="Apellido" id="Apellido" value="Andres">   <!--Variable que almacena Nombre-->
+            <button type="submit" onclick="coleccionar()">Registrar</button>
+            <p id="demo"></p>    <!--Mostrar demo-->
+
+
+            <!--para probar el codigo javascript usamos scrip t luego inspeccionar-->
+<script> 
+
+        const coleccion = document.forms["formulario1"];  
+        let texto="";
+
+        for (let contador=0;contador<=coleccion.length;contador++){
+            texto+=coleccion.elements[contador].values();
+        }
+
+        document.getElementById("demo").innerHTML=texto; 
+
+</script>
+
+        </form>
+    </section>
+
+</body>
+</html>
